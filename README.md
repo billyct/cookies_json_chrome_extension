@@ -2,7 +2,7 @@
 ![logo](./icons/logo.png)
 [中文](https://github.com/billyct/cookies_json_chrome_extension/blob/master/readme_zh.md)
 
-a chrome extension show json style cookies, it's useful for you test some web programs
+a chrome extension show json style cookies, it's useful for you test some web programs,example:when you use phantomjs to test login,and the cookies,just copy from the extension and then use .addCookie etc....
 
 ### setup
 * ```$ git clone https://github.com/billyct/cookies_json_chrome_extension.git```
@@ -15,4 +15,4 @@ a chrome extension show json style cookies, it's useful for you test some web pr
 
 
 ### thx
-Inspired by the chrome extension [cookies.txt](https://chrome.google.com/webstore/detail/cookiestxt/njabckikapfpffapmjgojcnbfjonfjfg)
+Inspired by the chrome extension [cookies.txt](https://chrome.google.com/webstore/detail/cookiestxt/njabckikapfpffapmjgojcnbfjonfjfg),97% not write by billyct,but by the author of [cookies.txt](https://chrome.google.com/webstore/detail/cookiestxt/njabckikapfpffapmjgojcnbfjonfjfg)

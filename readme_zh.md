@@ -15,4 +15,4 @@
 
 
 ### thx
-参考了下 [cookies.txt](https://chrome.google.com/webstore/detail/cookiestxt/njabckikapfpffapmjgojcnbfjonfjfg) （基本上就是用的它的核心，因为我需要的时候json格式的，展示上改变了一下，具体就是popup.js里面有，可以diy进去其他的关于cookie的东西）
+参考了下 [cookies.txt](https://chrome.google.com/webstore/detail/cookiestxt/njabckikapfpffapmjgojcnbfjonfjfg) （基本上97%就是用的它的核心，少量的自己写的代码，因为我需要的时候json格式的，展示上改变了一下，具体就是popup.js里面有，可以diy进去其他的关于cookie的东西）

@@ -26,12 +26,16 @@ var content = "",
 
 chrome.tabs.getSelected(null, function(e) {
 
+  //下面就是修改自cookies.txt插件的版本
+
   domain = getDomain(e.url);
   chrome.cookies.getAll({}, function(o) {
 
     for (var t in o) {
       cookie = o[t];
+
       if (-1 != cookie.domain.indexOf(domain)) {
+        //变成json的地方，可以在这里添加更多关于json的属性
         jsons.push({
           name : escapeForPre(cookie.name),
           value: escapeForPre(cookie.value),
@@ -44,8 +48,14 @@ chrome.tabs.getSelected(null, function(e) {
       };
     }
 
+    //变成可以看的json string
     content += JSON.stringify(jsons, null, 2);
-    document.write('<pre>\n'+content+'</pre>');
+
+    //下载链接
+    var downloadLinkContent = "data:application/octet-stream;base64," + btoa(content);
+    var downloadLink = "<a href=" + downloadLinkContent + ' download="cookies.json">download as json file</a>';
+
+    document.write('<pre>\n'+ downloadLink +'\n\n'+content+'</pre>');
     
   });
 });
