@@ -1,6 +1,6 @@
 # cookies_json_chrome_extension
 ![logo](./icons/logo.png)
-[中文](./readme)
+[中文](https://github.com/billyct/cookies_json_chrome_extension/blob/master/readme_zh.md)
 
 a chrome extension show json style cookies, it's useful for you test some web programs
 
